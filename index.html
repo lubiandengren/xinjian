@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>积少橙多·备考中心</title>
+    <style>
+        /* 全局样式，让页面更清爽 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, "Microsoft YaHei", sans-serif;
+            background: #f2f6f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 32px;
+            padding: 40px 30px 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a2a3a;
+            margin-bottom: 4px;
+        }
+
+        .brand span {
+            color: #2f7a9e;
+        }
+
+        .subtitle {
+            color: #6a8a9a;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #eef4f8;
+            color: #2f7a9e;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 24px;
+        }
+
+        /* 科目按钮样式 - 清晰显眼 */
+        .subject-btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 60px;
+            background: #1a4d66;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+
+        .subject-btn:hover {
+            background: #0f3f55;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 77, 102, 0.3);
+        }
+
+        .subject-btn .icon {
+            margin-right: 8px;
+        }
+
+        .login-hint {
+            font-size: 12px;
+            color: #aab8c4;
+            margin-top: 12px;
+        }
+
+        /* 底部备案信息 */
+        .footer {
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 1px solid #eef2f7;
+            font-size: 12px;
+            color: #b0bec5;
+            line-height: 1.8;
+        }
+
+        .footer a {
+            color: #6a8a9a;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .beian {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6px 16px;
+        }
+
+        /* 备案项：图标+文字水平居中 */
+        .beian-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .beian-item img {
+            display: inline-block;
+            height: 16px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        /* 极小屏适配 */
+        @media (max-width: 380px) {
+            .footer .beian {
+                gap: 4px 8px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 品牌区域 -->
+        <div class="brand">积少橙多<span>·备考中心</span></div>
+        <p class="subtitle">📱 手机 / 💻 电脑 通用</p>
+        <div class="badge">请选择备考科目</div>
+
+        <!-- 科目选择区域：信息处理技术员 -->
+        <a href="https://51ruankao.github.io/xinchu/platform.html?token=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" class="subject-btn" target="_blank">
+            <span class="icon">📘</span> 信息处理技术员（初级）
+        </a>
+        <a href="https://51ruankao.github.io/xinjian/platform.html?token=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" class="subject-btn" target="_blank">
+            <span class="icon">📘</span> 信息系统监理师（中级）
+        </a>
+        <div class="login-hint">点击进入 · 在线学习</div>
+
+        <!-- 底部备案信息（完整版） 新增粤公网安备号 + 备案图标 -->
+        <div class="footer">
+            <div class="beian">
+                <!-- 粤ICP备案 -->
+                <span class="beian-item">
+                    <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2026099441号</a>
+                </span>
+                <!-- 粤公网安备 + 图标 -->
+                <span class="beian-item">
+                    <img src="https://www.91ruankao.cn/chengkao/icon/beian.png" alt="公安备案图标" loading="lazy">
+                    <a href="https://beian.mps.gov.cn" target="_blank">粤公网安备 44195802000143号</a>
+                </span>
+            </div>
+            <div style="margin-top:6px; font-size:11px; color:#c5d0d9;">
+                积少橙多教育 © 2026
+            </div>
+        </div>
+    </div>
+</body>
+</html>
